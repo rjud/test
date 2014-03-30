@@ -2,6 +2,8 @@ require 'projecta'
 
 class ProjectB < Application
   
+  c
+  
   git 'https://github.com/rjud/ProjectB.git'
   
   cmake do
