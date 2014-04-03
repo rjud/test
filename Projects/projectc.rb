@@ -1,4 +1,4 @@
-class ProjectC < Application
+class ProjectC < Project
   c
   git 'https://github.com/rjud/ProjectC.git'
   cmake
