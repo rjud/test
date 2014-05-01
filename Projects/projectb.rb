@@ -13,6 +13,8 @@ class ProjectB < Project
   
   ctest
   
+  redmine 'http://demo.redmine.org', 'projectc'
+  
   depend_on ProjectA, :BUILD_WITH_A
   
 end
