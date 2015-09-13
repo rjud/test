@@ -1,13 +1,13 @@
-# coding: utf-8
 module OSG
+  prj :Zlib1, :version => '1.2.8'
+  prj :Curl, :version => '7.44.0'
+  prj :LibJPEG, :version => '6b'
+  prj :LibTIFF, :version => '3.9.4'
+  prj :LibGeoTIFF, :version => '1.4.0'
   prj :GDAL, :version => '1.11.1'
+  prj :Boost, :version => '1.59.0'
+  prj :LibLAS, :version => '1.8.0'
+  prj :OsgEarth, :version => '2.4', :tag => 'osgearth-2.4'
+  prj :OpenSceneGraph, :version => '3.0.1', :tag => 'OpenSceneGraph-3.0.1'
 end
-
-#OpenSceneGraph => 3.0.1
-#Boost 1.57.0
-#GDAL 1.11.1
-#liblas 1.80
-#libtiff 3.9.4
-#libgeotiff 1.4.0
-#osgEarth 2.4.0 (intégré depuis à OSG)
-#Passer à OSG 3.3.x
+#Passer a OSG 3.3.x
