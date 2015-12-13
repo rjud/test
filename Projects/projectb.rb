@@ -14,8 +14,5 @@ class ProjectB < Project
   ctest
   
   redmine 'http://demo.redmine.org', 'projectc'
-    
-  def bindir; prefix.join('bin').to_s; end
-  def libdir; prefix.join('lib').to_s; end
   
 end

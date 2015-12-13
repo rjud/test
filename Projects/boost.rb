@@ -2,7 +2,7 @@ class Boost < Project
   
   cxx
   #git 'https://github.com/boostorg/boost.git', { :args => '--recursive' }
-  wget 'https://downloads.sourceforge.net/project/boost/boost/%{version}/boost_%{major}_%{minor}_%{revision}.tar.gz', Tarball.new, { :srcrename => 'boost_%{major}_%{minor}_%{revision}' }
+  wget 'https://downloads.sourceforge.net/project/boost/boost/%{version}/boost_%{major}_%{minor}_%{revision}.tar.gz', { :srcrename => 'boost_%{major}_%{minor}_%{revision}' }
   insource
   
   configure do

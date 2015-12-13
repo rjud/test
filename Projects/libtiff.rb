@@ -1,9 +1,7 @@
-require 'tarball'
-
 class LibTIFF < Project
   
   c
-  wget 'ftp://ftp.remotesensing.org/pub/libtiff/tiff-3.9.4.tar.gz', Tarball.new, { :srcrename => 'tiff-3.9.4' }
+  wget 'ftp://ftp.remotesensing.org/pub/libtiff/tiff-3.9.4.tar.gz', { :srcrename => 'tiff-3.9.4' }
   
   if Platform.is_windows? then
     def builddir bt; srcdir bt; end 

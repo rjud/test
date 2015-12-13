@@ -1,7 +1,7 @@
 class LibJPEG < Project
   
   c
-  wget 'http://sourceforge.net/projects/libjpeg/files/libjpeg/6b/jpegsrc.v6b.tar.gz/download', Tarball.new, { :srcrename => 'jpeg-6b' }
+  wget 'http://sourceforge.net/projects/libjpeg/files/libjpeg/6b/jpegsrc.v6b.tar.gz/download', { :srcrename => 'jpeg-6b' }
   
   if Platform.is_windows? then
     # Add a patch to add WIN32.MAK
